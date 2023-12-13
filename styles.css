@@ -167,6 +167,7 @@
   /* ShoppingCarr */
   #shoppingCartContainer{
     padding: 0 24px;
+    background-color: var(--white);
   }
   .title-container {
     display: flex;
@@ -250,6 +251,9 @@
   }
   .product-detail-close:hover {
     cursor: pointer;
+  }
+  #productDetail{
+    background-color: var(--white);
   }
   #productDetail > img:nth-child(2) {
     width: 100%;
