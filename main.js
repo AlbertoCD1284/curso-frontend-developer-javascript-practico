@@ -4,7 +4,7 @@ const menuCarrito = document.querySelector('.navbar-shopping-cart');
 
 const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
-const carritoComprasMenu = document.querySelector('.product-detail');
+const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
 const cardsContainer = document.querySelector('.cards-container');
 
 menuEmail.addEventListener('click', toggleDestopMenu);
@@ -14,18 +14,18 @@ menuCarrito.addEventListener('click', toggleCarritoMenu);
 // Menu en Email: sale menu con clik en Email
 function toggleDestopMenu() {
     desktopMenu.classList.toggle('inactive');
-    carritoComprasMenu.classList.add('inactive');
+    shoppingCartContainer.classList.add('inactive');
 }
 
 // Menu hambuergesa: Es para celulares  clik esquina sup-izq
 function toggleMobilMenu() {
     mobileMenu.classList.toggle('inactive');    
-    carritoComprasMenu.classList.add('inactive');
+    shoppingCartContainer.classList.add('inactive');
 }
 
 // Menu carrito de compras
 function toggleCarritoMenu() {
-    carritoComprasMenu.classList.toggle('inactive');
+    shoppingCartContainer.classList.toggle('inactive');
     mobileMenu.classList.add('inactive');    
     desktopMenu.classList.add('inactive');
 
